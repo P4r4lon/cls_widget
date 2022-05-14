@@ -107,12 +107,14 @@ img {
 
 .modal__info {
     z-index: 3;
-    max-width: 70rem;
-    width: 70rem;
-    height: 70rem;
+    max-width: 90rem;
     position: fixed;
     top: 25%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    gap: 2rem;
 }
 
 .close__cross {
@@ -122,5 +124,7 @@ img {
 }
 
 .modal__info-frame {
-    margin: 1rem;
+    width: 33rem;
+    height: 15rem;
+    margin: 0;
 }
