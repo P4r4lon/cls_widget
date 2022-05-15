@@ -7,6 +7,16 @@ html {
     min-height: 100%;
 }
 
+.cls__global_container h1 {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
+.cls__global_container h2 {
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+
 .cls__global_container h3 {
     font-weight: 700;
     font-size: 2.4rem;
@@ -75,7 +85,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 1.7rem;
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
     font-weight: 700;
     font-size: 1.2rem;
@@ -114,7 +124,7 @@ img {
     flex-direction: column;
     display: flex;
     align-items: center;
-    height: 250rem;
+    height: 20rem;
 }
 
 .default__frame-connect {
@@ -123,6 +133,8 @@ img {
     height: 5rem;
     display: flex;
     justify-content: center;
+    user-select: none;
+    cursor: pointer;
 }
 
 .modal__info {
@@ -179,6 +191,61 @@ img {
     margin-bottom: 3rem;
 }
 
-.modal__one-third {}
+#guideModal {
+    max-width: 46rem;
+}
 
-.modal__one-quarter {}
+.modal__one-quarter {
+    padding: 3rem;
+    max-height: 17rem;
+}
+
+.widget__container {
+    width: 90rem;
+    height: 30rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.widget__container .table__frame {
+    width: 98%;
+    height: 6rem;
+    padding-left: 3%;
+    justify-content: space-between;
+}
+
+.widget__container .currency__frame {
+    width: 17rem;
+    height: 80%;
+    padding: 0 3%;
+    border-radius: 0.85rem;
+}
+
+.widget__container .bg__orange {
+    justify-content: center;
+}
+
+.range__bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    max-width: 50rem;
+    height: 8rem;
+    top: 32%;
+}
+
+.range__bar .bg__orange {
+    height: 3rem;
+    width: 20rem;
+    margin: 2.5rem 0;
+}
+
+.range__bar .range__slider {
+    padding: 0;
+    width: 8rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

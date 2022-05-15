@@ -7,7 +7,8 @@ const guideModal = document.getElementById("guideModal")
 
 const overlay = document.querySelector(".overlay")
 
-console.log(openModals)
+let activeModal = null;
+
 
 const modals = {
     info: infoModal,
@@ -24,14 +25,15 @@ closeModals.forEach((item) => {
     item.onclick = () => fadeOutModal(currentModal)
 })
 
-
+overlay.onclick = () => fadeOutModal(activeModal)
 
 function fadeInModal(modal) {
+    activeModal = modal;
     modal.style.display = "flex";
     overlay.style.display = "block"
     setTimeout(() => {
         overlay.style.opacity = 1;
-        infoModal.style.opacity = 1;
+        modal.style.opacity = 1;
     }, 0)
 }
 
@@ -39,7 +41,7 @@ function fadeOutModal(modal) {
     modal.style.opacity = 0;
     overlay.style.opacity = 0;
     setTimeout(() => {
-        infoModal.style.display = "none";
+        modal.style.display = "none";
         overlay.style.display = "none"
     }, 500)
 }
