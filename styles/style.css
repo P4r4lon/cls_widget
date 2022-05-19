@@ -85,16 +85,10 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 1.7rem;
+    border-radius: 1.3rem;
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
     font-weight: 700;
     font-size: 1.2rem;
-}
-
-.table__frame {
-    width: 60rem;
-    justify-content: space-between;
-    height: 3.5rem;
 }
 
 .bg__green {
@@ -191,8 +185,16 @@ img {
     margin-bottom: 3rem;
 }
 
-#guideModal {
+.bounding__container {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: inherit;
+    flex-direction: inherit;
+    flex-wrap: inherit;
+    padding-top: inherit;
     max-width: 46rem;
+    gap: inherit;
 }
 
 .modal__one-quarter {
@@ -217,9 +219,10 @@ img {
 
 .widget__container .currency__frame {
     width: 17rem;
-    height: 80%;
-    padding: 0 3%;
+    height: 5rem;
+    padding: 0 1rem;
     border-radius: 0.85rem;
+    position: relative;
 }
 
 .widget__container .bg__orange {
@@ -248,4 +251,42 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.dropdown__select-groupitem {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0%;
+    box-shadow: 0 0 4rem rgb(0, 0, 0, 0.4rem);
+    transition: all .5s ease-in-out;
+    display: none;
+}
+
+.widget__container .dropdown__select-item {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+}
+
+.widget__container .dropdown__select-item:last-child {
+    border-bottom-right-radius: 0.85rem;
+    border-bottom-left-radius: 0.85rem;
+}
+
+.widget__container .no__bottom-border-radius {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.dropdown__select-item:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown__select-head {
+    cursor: pointer;
+}
+
+.active {
+    display: block;
 }

@@ -1,0 +1,37 @@
+.table__trade-container {
+    width: 90rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__frame {
+    width: 62rem;
+    justify-content: space-between;
+    height: 4.5rem;
+    border-radius: 1rem;
+}
+
+.table__trade-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table__trade-container .table__trade-header {
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.table__trade-container .table__frame {
+    margin-bottom: 1rem;
+}
+
+.table__trade-container .table__frame {}
+
+.table__trade-container .table__currency-rate {
+    width: 13rem;
+    height: 4.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

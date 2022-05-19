@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.test {
+    width: 10em;
+    height: 10em;
+    background-color: #fff;
+}
+
+.sontest {
+    width: 5em;
+    height: 5em;
+    background-color: #145;
+}
